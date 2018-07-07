@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home | Coursekiya - alpha1</title>
+        <meta name="viewport" width="device-width; initial-scale=1">
+        <meta charset="UTF-8" >
+        <link href="css/jquery-ui.css" rel="stylesheet" >
+        <link href="css/bootstrap.css" rel="stylesheet" >
+        <link href="css/font-awesome.css" rel="stylesheet" >
+        <link href="css/swiper.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!-- navigation bar starts -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html" style="font-family: fantasy;font-size:25px;">Coursekiya</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <ul class="navbar-nav">
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-globe custom-icon"></i>    Location
+                        </a>
+                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Hyderabad</a>
+                            <a class="dropdown-item" href="#">Bangalore</a>
+                            <a class="dropdown-item" href="#">Delhi</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- navigation bar ends -->
+
+        <div class="container-fluid">
+            <form action="" method="GET"> 
+                <div class="row searchAlignment">
+                    <div class="col-xs-12 col-md-12 col-lg-12" >
+                        <div class="input-group">
+                            <input type="text" autocomplete="off" class="customText" placeholder="What are you looking for?" id="txtSearch"/>
+                            <button class="btn btn-primary customButton" id="btnSearch" type="submit">
+                                <span>Search</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form> 
+            <p>&nbsp;</p>
+
+        <!-- </div>
+        <div class="container"> -->
+  <div class="row">
+    <div class="col-lg-3 col-md-3">
+      <div class="col-lg-12" id="sticky-sidebar">
+            <ul class="list-group">
+                    <li class="list-group-item active" style="margin:-3px;">Trending</li>
+                    <li class="list-group-item">Peers Technologies</li>
+                    <li class="list-group-item">Naresh Technologies</li>
+                    <li class="list-group-item">Global Tech</li>
+                    <li class="list-group-item">...</li>
+                    <li class="list-group-item">...</li>
+                    <li class="list-group-item">...</li>
+                    <li class="list-group-item">...</li>
+                  </ul>
+      </div>
+    </div>
+    <div class="col-lg-8 col-md-8" id="main">
+            <div class="row rowCard">
+                    <div class="col-md-4">
+                        <img src="images/office.jpg" />
+                    </div>
+                    <div class="col-md-8">  
+                        <h3>Naresh Technologies</h3>
+                        <p>
+                            <!-- <span>
+                                <b><i class="fa fa-home"></i> Address: </b> Flat:121, Ameerpet, Hyderabad-500018
+                            </span>
+                            <br /> -->
+                            <span>
+                                <b><i class="fa fa-map-marker"></i> Location: </b> Hyderabad
+                            </span>
+                            <br />
+                            <span>
+                                <b><i class="fa fa-phone"></i> Phone: </b> 040-2356236, 2563544
+                            </span>
+                            <br />
+                            <span>
+                                <b><i class="fa fa-envelope"></i> Email: </b> support@nareshtech.com
+                            </span>
+                            <br/>
+                            <span>
+                                <b>Searched course:</b> <span class="badge badge-pill badge-success"> java</span>
+                            </span>
+                            <br/>
+                            <span>
+                                <b>Suggested course:</b> 
+                                <span class="badge badge-pill badge-primary"> Javascript</span>
+                                <span class="badge badge-pill badge-primary"> Angular</span>
+                                <span class="badge badge-pill badge-primary"> Dotnet</span>
+                                <span class="badge badge-pill badge-primary"> PHP</span>
+                                <span class="badge badge-pill badge-primary"> Hadoop</span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            <div class="row rowCard">
+                        <div class="col-md-4">
+                            <img src="images/office.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-8">  
+                            <h3>Pragim Technologies</h3>
+                            <p>
+                                <!-- <span>
+                                    <b><i class="fa fa-home"></i> Address: </b> Flat:121, Ameerpet, Hyderabad-500018
+                                </span>
+                                <br /> -->
+                                <span>
+                                    <b><i class="fa fa-map-marker"></i> Location: </b> Hyderabad
+                                </span>
+                                <br />
+                                <span>
+                                    <b><i class="fa fa-phone"></i> Phone: </b> 040-2356236, 2563544
+                                </span>
+                                <br />
+                                <span>
+                                    <b><i class="fa fa-envelope"></i> Email: </b> support@pragim.com
+                                </span>
+                                <br/>
+                                <span>
+                                    <b>Searched course:</b> <span class="badge badge-pill badge-success"> java</span>
+                                </span>
+                                <br/>
+                                <span>
+                                    <b>Suggested course:</b> 
+                                    <span class="badge badge-pill badge-primary"> Node.js</span>
+                                    <span class="badge badge-pill badge-primary"> Angular</span>
+                                    <span class="badge badge-pill badge-primary"> Dotnet</span>
+                                    <span class="badge badge-pill badge-primary"> Hadoop</span>
+                                    <span class="badge badge-pill badge-primary"> Hardware & Networking</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row rowCard">
+                            <div class="col-md-4">
+                                <img src="images/office.jpg" class="img-rounded"/>
+                            </div>
+                            <div class="col-md-8">  
+                                <h3>Pragim Technologies</h3>
+                                <p>
+                                    <!-- <span>
+                                        <b><i class="fa fa-home"></i> Address: </b> Flat:121, Ameerpet, Hyderabad-500018
+                                    </span>
+                                    <br /> -->
+                                    <span>
+                                        <b><i class="fa fa-map-marker"></i> Location: </b> Hyderabad
+                                    </span>
+                                    <br />
+                                    <span>
+                                        <b><i class="fa fa-phone"></i> Phone: </b> 040-2356236, 2563544
+                                    </span>
+                                    <br />
+                                    <span>
+                                        <b><i class="fa fa-envelope"></i> Email: </b> support@pragim.com
+                                    </span>
+                                    <br/>
+                                    <span>
+                                        <b>Searched course:</b> <span class="badge badge-pill badge-success"> java</span>
+                                    </span>
+                                    <br/>
+                                    <span>
+                                        <b>Suggested course:</b> 
+                                        <span class="badge badge-pill badge-primary"> Node.js</span>
+                                        <span class="badge badge-pill badge-primary"> Angular</span>
+                                        <span class="badge badge-pill badge-primary"> Dotnet</span>
+                                        <span class="badge badge-pill badge-primary"> Hadoop</span>
+                                        <span class="badge badge-pill badge-primary"> Hardware & Networking</span>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row rowCard">
+                                <div class="col-md-4">
+                                    <img src="images/office.jpg" class="img-rounded"/>
+                                </div>
+                                <div class="col-md-8">  
+                                    <h3>Pragim Technologies</h3>
+                                    <p>
+                                        <!-- <span>
+                                            <b><i class="fa fa-home"></i> Address: </b> Flat:121, Ameerpet, Hyderabad-500018
+                                        </span>
+                                        <br /> -->
+                                        <span>
+                                            <b><i class="fa fa-map-marker"></i> Location: </b> Hyderabad
+                                        </span>
+                                        <br />
+                                        <span>
+                                            <b><i class="fa fa-phone"></i> Phone: </b> 040-2356236, 2563544
+                                        </span>
+                                        <br />
+                                        <span>
+                                            <b><i class="fa fa-envelope"></i> Email: </b> support@pragim.com
+                                        </span>
+                                        <br/>
+                                        <span>
+                                            <b>Searched course:</b> <span class="badge badge-pill badge-success"> java</span>
+                                        </span>
+                                        <br/>
+                                        <span>
+                                            <b>Suggested course:</b> 
+                                            <span class="badge badge-pill badge-primary"> Node.js</span>
+                                            <span class="badge badge-pill badge-primary"> Angular</span>
+                                            <span class="badge badge-pill badge-primary"> Dotnet</span>
+                                            <span class="badge badge-pill badge-primary"> Hadoop</span>
+                                            <span class="badge badge-pill badge-primary"> Hardware & Networking</span>
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+        
+                            <!-- pagination -->
+
+                            <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-end">
+                                            <li class="page-item disabled">
+                                              <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item">
+                                              <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                              <a class="page-link" href="#">Next</a>
+                                            </li>
+                                          </ul>
+                                  </nav>
+                                  
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="#!">Home</a></li>
+                        <li><a href="#!">About us</a></li>
+                        <li><a href="#!">Contact us</a></li>
+                        <li><a href="#!">How it works</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                        <ul>
+                            <li><a href="#!">Register</a></li>
+                            <li><a href="#!">Login</a></li>
+                            <li><a href="#!">List you Institute</a></li>
+                            <li><a href="#!">Know more..</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-5">
+                        <div class="input-group">
+                            <input type="text" autocomplete="off" class="form-control" placeholder="Subscribe to Newsletters" id="txtNewsletter"/>
+                            <button class="btn btn-primary" id="btnNewsletter" type="submit">
+                                <span>Subscribe</span>
+                            </button>
+                        </div>  
+                        <div class="socialIcons">
+                            <label>Reach us @ </label>
+                            <a href="#!" class="fa fa-twitter-square" title="twitter"></a>
+                            <a href="#!" class="fa fa-facebook-square" title="facebook"></a>
+                            <a href="#!" class="fa fa-google-plus-square" title="google plus"></a>
+                        </div>      
+                </div>
+                <div class="col-lg-12 col-md-12 text-center">
+                        <hr>
+                    <p class="text-white">
+                        &copy; Coursekiya, all rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+     
+        <script src="scripts/jquery-3.3.1.js" type="text/javascript"></script>
+        <script src="scripts/jquery-ui-1.12.1.js" type="text/javascript"></script>
+        <script src="scripts/bootstrap.js" type="text/javascript" ></script>
+        <script src="scripts/swiper.js" type="text/javascript" ></script>
+        <script src="scripts/custom.js" type="text/javascript" ></script>
+    </body>
+</html>

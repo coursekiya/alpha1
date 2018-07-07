@@ -274,6 +274,78 @@
                                     <label>You have searched for "<span id="lblselectedValue"></span>"</label>
                                 </div>
                                 <hr />
+                                <div id="screen1">
+                                        <div class="form-group col-md-12 col-lg-12">
+                                            <div class="row">
+                                                <h6 class="form-check-label">Select preferred course(s) from the list</h6>
+                                            <div class="form-check col-md-6">
+                                                <input class="form-check-input" name="rdclassType" type="checkbox" id="chk1" value="Java" >
+                                                <label class="form-check-label">Java</label>
+                                            </div>
+                                            <div class="form-check col-md-6">
+                                                <input class="form-check-input" name="rdclassType" type="checkbox" id="chk2" value="J2EE" >
+                                                <label class="form-check-label">J2EE</label>
+                                            </div>
+                                            <div class="form-check col-md-6">
+                                                    <input class="form-check-input" name="rdclassType" type="checkbox" id="chk3" value="CoreJava" >
+                                                    <label class="form-check-label">Core Java</label>
+                                                </div>
+                                                <div class="form-check col-md-6">
+                                                    <input class="form-check-input" name="rdclassType" type="checkbox" id="chk4" value="MVC" >
+                                                    <label class="form-check-label">MVC</label>
+                                                </div>
+                                                   <div class="form-check col-md-6">
+                                                <input class="form-check-input" name="rdclassType" type="checkbox" id="chk5" value="AngularJs" >
+                                                <label class="form-check-label">Angular Js</label>
+                                            </div>
+                                            <div class="form-check col-md-6">
+                                                <input class="form-check-input" name="rdclassType" type="checkbox" id="chk6" value="NodeJs" >
+                                                <label class="form-check-label">Node Js</label>
+                                            </div>
+                                            <div class="form-check col-md-6">
+                                                    <input class="form-check-input" name="rdclassType" type="checkbox" id="chk7" value="PHP" >
+                                                    <label class="form-check-label">PHP</label>
+                                                </div>
+                                                <div class="form-check col-md-6">
+                                                    <input class="form-check-input" name="rdclassType" type="checkbox" id="chk8" value="Python" >
+                                                    <label class="form-check-label">Python</label>
+                                                </div>
+                                                <div class="form-check col-md-6">
+                                                        <input class="form-check-input" name="rdclassType" type="checkbox" id="chk1" value="HtmlandCSS" >
+                                                        <label class="form-check-label">Html & CSS</label>
+                                                    </div>
+                                                    <div class="form-check col-md-6">
+                                                        <input class="form-check-input" name="rdclassType" type="checkbox" id="chk2" value="UI/UX" >
+                                                        <label class="form-check-label">UI/UX</label>
+                                                    </div>
+                                                    <div class="form-check col-md-6">
+                                                            <input class="form-check-input" name="rdclassType" type="checkbox" id="chk1" value="Android" >
+                                                            <label class="form-check-label">Android Apps</label>
+                                                        </div>
+                                                        <div class="form-check col-md-6">
+                                                            <input class="form-check-input" name="rdclassType" type="checkbox" id="chk2" value="IOS" >
+                                                            <label class="form-check-label">IOS</label>
+                                                        </div>
+                                                        <div class="form-check col-md-6">
+                                                                <input class="form-check-input" name="rdclassType" type="checkbox" id="chk1" value="Android" >
+                                                                <label class="form-check-label">Android Apps</label>
+                                                            </div>
+                                                            <div class="form-check col-md-6">
+                                                                <input class="form-check-input" name="rdclassType" type="checkbox" id="chk2" value="IOS" >
+                                                                <label class="form-check-label">IOS</label>
+                                                            </div>
+                                                    </div>
+                                                        <hr />
+                                    <div class="form-group text-right">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="float:left;">Close</button>
+                                        
+                        <button type="button" id="btnNextScreen1" class="btn btn-primary">
+                            Next <i class="fa fa-angle-right"></i></button>
+                                    </div>
+                                        
+                                            </div>
+                                </div>
+                                <div id="screen2">
                                 <div class="form-group">
                                     <h6 class="form-check-label">what type of class you're looking for?</h6>
                                 <div class="form-check form-check-inline">
@@ -315,10 +387,45 @@
                                     </div>
                                     <hr />
                                     <div class="form-group text-right">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal" style="float:left;">Close</button>
+                                            <button type="button" class="btn btn-primary" id="btnBackScreen2">
+                                                <i class="fa fa-angle-left"></i> Back</button>
+                            <button type="button" id="btnNextScreen2" class="btn btn-primary">
+                                Next <i class="fa fa-angle-right"></i></button>
                                     </div>
                             </div>
+                        
+                        <div  id="screen3">
+                               <form>
+                                    <div class="form-group">
+                                            <label for="name">Full Name</label>
+                                            <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter full name">
+                                          </div>
+                                          <div class="form-group">
+                                                <label for="email">Email address</label>
+                                                <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email">
+                                              </div>
+                                          <div class="form-group">
+                                                <label for="phone">Mobile No</label>
+                                                <input type="text" class="form-control" id="phone" aria-describedby="phone" placeholder="Enter email">
+                                              </div>
+                               </form>
+                               <small id="emailHelp" class="form-text text-muted">We'll never share your email & mobile no with anyone without your permission.</small>
+                               <div class="">
+                                   <input type="checkbox" id="agree">
+                                   <label for="agree">Yes, I would like to share my details for better results</label>
+                               </div>
+                                <hr />
+                                <div class="form-group text-right">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="float:left;">Close</button>
+                                        <button type="button" class="btn btn-primary" id="btnBackScreen3">
+                                            <i class="fa fa-angle-left"></i> Back</button>
+                        <button type="button" id="btnNextScreen3" class="btn btn-primary">
+                            Finish <i class="fa fa-angle-right"></i></button>
+                                </div>
+                        </div>
+                        </div>
+
                         </div>
                     </div>
                 </div>

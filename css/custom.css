@@ -160,6 +160,10 @@ body{
     padding: 20px;
 }
 
+.modal .form-group label {
+    margin-bottom: 0rem !important;
+}
+
 /* carousel */
 .carousel-item img {
     width: 100%;
@@ -216,7 +220,7 @@ body{
     filter: blur(0);
 }
 
-.textOverImg h2, span {
+.textOverImg h1, span {
     font-weight: 800;
 }
 

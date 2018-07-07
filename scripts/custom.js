@@ -70,9 +70,39 @@ $(document).ready(function(){
 
 
     function doScroll(i) {
-      console.log(bgimg[i]);
       $('.bgImg').css("background-image", "url("+ bgimg[i]+")");
     }
+
+    $('#screen2').hide();
+    $('#screen3').hide();
+
+    $('#btnNextScreen1').click(function(){
+      $('#screen1').hide();
+      $('#screen2').show();
+    });
+
+    $('#btnNextScreen2').on('click', function(){
+      $('#screen2').hide();
+      $('#screen3').show();
+    });
+
+    $('#btnNextScreen3').on('click', function(){
+      alert("You will recieve information via SMS shortly!, Thank you");
+      location.href="list.html";
+    });
+
+    $('#btnBackScreen2').on('click', function(){
+      $('#screen2').hide();
+      $('#screen1').show();
+    });
+
+    $('#btnBackScreen3').on('click', function(){
+      $('#screen3').hide();
+      $('#screen2').show();
+    });
+
+
+
 
   });
         
